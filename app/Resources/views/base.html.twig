@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Very Simple MVC by SDBD B13</title>
+    </head>
+    <body>
+        <h4>Simple Table to show several courses of SDBD</h4>
+        <table>{%for unCours in cours %}
+                <tr>
+                    <td>nom:  </td>
+                    <td>{{unCours.nomCours}}</td>
+                </tr>
+                
+                <tr>
+                    <td>nb_credit: </td>
+                    <td>{{unCours.nbCreditCours}}</td>
+                </tr>
+                
+                <tr>
+                    <td>Specialite: </td>
+                    <td>{{unCours.specialiteCours}}</td>
+                </tr>
+                <td>----------------</td>
+        {% endfor %}</table>    
+    </body>
+</html>
